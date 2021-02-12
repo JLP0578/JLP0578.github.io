@@ -125,7 +125,7 @@ main {
 .ContenuAPropos div ul, .ContenuContact div ul {
   margin: auto;
   max-width: 100%;
-  width: 70%;
+  width: 80%;
 }
 
 .ContenuAPropos div ul li, .ContenuContact div ul li {
