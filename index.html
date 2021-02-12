@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr" id="html">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name= "description" content= "Portfolio devloppeur Web de Julie.LP" />
+        <title>Portfolio Julie.LP Devloppeur Web</title>
+
+        <!-- CSS -->
+        <link href="./Folio_v2.css" rel="stylesheet">
+
+        <!-- ICON -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+        <link rel="manifest" href="./ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#1B1B23">
+        <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#1B1B23">
+
+        <style>
+            /* contenu modifiable */
+            html{
+                background-color: #1B1B23;
+            }
+            body{
+                background-color: transparent;
+            }
+            h1,h2,h3,h4,h5,h6,p,span,label,input,textarea{
+                color: #ffffff;
+                font-family: "Vcr_Osd_Mono";
+            }
+            input[type="submit"] {
+                color: black;
+                background-color: #23BBE4;
+                border: solid 1px #13708a;
+            }
+            input{
+                color: black;
+            }
+            .displayBlock{
+                background-color: #1B1B23;
+            }
+            header{
+                background-color: #1B1B23;
+            }
+            .Bas{
+                color: #E68DE1;
+            }
+            .Haute{
+                color: #21E8CB;
+            }
+            .Prompt{
+                background-color: #23BBE4;
+                color: transparent;
+            }
+            .loader{
+                background-color: #1B1B23;
+            }
+        </style>
+    </head>
+    <body onload="LoaderFinish()">
+    <!-- Composants + Loader -->
+    <script src="First.js" type="text/javascript"></script>
+    <div class="loader" id="Loader"><p>Chargement...<span class="Prompt" id="PromptLoader">#</span></p></div>
+
+        <header>
+            <h1 class="displayNone">Devloppeur Web</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" title="">
+                        <h2>Julie.LP</h2>
+                    </a></li>
+                    <li>
+                        <a href="#" title="">
+                            <img src="./icon/menu-mobile.png" alt="Le menu" class="icone iconeMenu" id="LIconMenu" width="168" height="168">
+                        </a>
+                        <ul id="menu" class="displayNone">
+                            <li><a href="#APorpos" title="" onclick="CloseMenu()">
+                                <h2>A propos</h2>
+                            </a></li>
+                            <li><a href="#Contact" title="" onclick="CloseMenu()">
+                                <h2>Me Contacter</h2>
+                            </a></li>
+                            <li><h2><span class="Prompt">#</span></h2></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main> 
+
+            <a class="arrow-wrap" href="#APorpos" title="Vers A Propos">
+                <span class="arrow"></span>
+            </a>
+            <hr id="APorpos">
+
+            <section class="ContenuAPropos">
+                <h2>A Propos de moi<span class="Prompt">#</span></h2>
+                <div>
+                    <p>Bonjour, je m'appelle Julie je suis actuellement en license MIW (métier du web).</p>
+                    <p>J'ai effectué un <b>Bac Pro SEN</b> (Système Électronique Numérique) option EIE (Électronique Industrielle Embarquée) en 2016 avec une <span class="Haute">mention Bien</span></p>
+                    <p>Puis un <b>BTS SIO</b> (Services informatiques aux organisations) option SLAM (solutions logicielles et applications métiers) en 2018</p>
+
+                    <p><span class="Haute">[+]</span> Je suis à 100% dans mon travail et je cherche toujours à réussir même si cela doit prendre du temps.</p>
+                    <p><span>[~]</span> Je suis dyslexique, c'est une qualité comme une faiblesse.</p>
+                    <p><span class="Bas">[-]</span> Je suis très réservée.</p>
+                    <ul>
+                        <li class="titleLi"><hr><h3>Experience</h3><hr></li>
+                        <p><span class="Haute">[+]</span> j'ai quelques connaissances dans les réseaux (filaires et hertziens), l'électronique et la juridiction web.</p>
+
+                        <br/>
+                        <li class="titleLi"><h4 class="Haute">Haute utilisation</h4></li>
+                        <li><p>HTML, JS, CSS, SCSS, PHP, Mariadb</p></li>
+                                <br/>
+                        <li class="titleLi"><h4>Moyenne utilisation</h4></li>
+                        <li><p>Linux, Raspberry, Leaflet, Bootstrap, C++, QtCreator</p></li>
+                                <br/>
+                        <li class="titleLi"><h4 class="Bas">Basse utilisation</h4></li>
+                        <li><p>Node, React, Vue.js, Python, Gulp</p></li>
+                                <br/>
+                        <li class="titleLi"><hr><h3>Centre<br/>d'intérets</h3><hr></li>
+                                <br/>
+                        <li><p>Informatique Rétro, Nature, Moto, Dessin, Véhicule RC, Gitare, Jeu Vidéo, Musique, Cybersécurité</p></li>
+                                <br/>
+                        <li class="titleLi"><hr><h3>Projet</h3><hr></li>
+                                <br/>
+                        <li><p><span class="Bas">NewWorld</span>: Site de commerce qui permet de faire des achats chez différentent agriculteurs. (projet de BTS)</p></li>
+                        <li><p><span class="Haute">Ground Status</span>: WebApp qui répertorie les routes dangereuses que les utilisateurs signalent. (en cours de maquettage)</p></li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <a class="arrow-wrap" href="#Contact" title="Vers Contact">
+                <span class="arrow"></span>
+            </a>
+            <hr id="Contact">
+
+            <section class="ContenuContact">
+                <h2>Me contacter<span class="Prompt">#</span></h2>
+                <div>
+                    <p>Vous pouvez me contacter ci-dessous, je vous répondrai sous peu.</p>
+                    <form>
+                       <ul>
+                            <li>
+                                <label for="Nom"><span class="Bas" title="Champs obligatoire">*</span> Nom: </label>
+                                <input required type="text" placeholder="Dupond" id="Nom">
+                            </li>
+                           <li>
+                                <label for="Prenom"><span class="Bas" title="Champs obligatoire">*</span> Prenom: </label>
+                                <input required type="text" placeholder="Gertrude" id="Prenom">
+                            </li>
+                           <li>
+                               <label for="Mail"><span class="Bas" title="Champs obligatoire">*</span> Mail: </label>
+                               <input required type="email" placeholder="g.dupond@gmail.com" id="Mail">
+                           </li>
+                           <li>
+                               <label for="Message">Message: </label>
+                               <textarea id="Message" placeholder="Hello World !!!"></textarea>
+                           </li>
+                                    <br/>
+                            <li>
+                                <p><span class="Bas" title="Champs obligatoire">*</span><label for="AccordDeConfidencialite">Légalité: </label> <input required type="checkbox" id="AccordDeConfidencialite"> : En soumettant ce formulaire, j'accepte que les informations saisies soient explotées dans le cadre de contact et de la relation commerciale qui peut en découler.</p>
+                            </li>
+                                    <br/>
+                            <li class="center"><input type="submit" value="Envoyer"></li>
+                        </ul> 
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        
+        <footer>
+            <section>
+                <div>
+                    <p>CopyRight Julie Le Pivert 2020<br class="etatEE"/>
+                        <span id="EE1">1</span>
+                        <span id="EE2">2 3 4 5 6 7 8 </span>
+                        <span id="EE3">9</span>
+                    </p>
+                    <p>Réalisé avec HTML, SCSS, JS | Image progressive | Icons allègeées 64px | Mobile first</p>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
+<!-- Menu -->
+<script src="Last.js" rel="script"></script>
