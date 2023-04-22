@@ -1,0 +1,159 @@
+:root {
+    --card-outer-padding: 1.5px;
+    --tile-edges: 20px;
+    --width: 300px;
+    --og-clip-path: polygon(0 0, 0 calc(100% - var(--tile-edges)), var(--tile-edges) 100%, 100% 100%, 100% var(--tile-edges), calc(100% - var(--tile-edges)) 0);
+
+    /* --card-color: white;
+    --card-bg-color: red;
+    --card-bg-title-color: orange;
+    --card-bg-border-color: white; */
+    --card-color: white;
+    --card-bg-color: var(--loader-bg-color);
+    --card-bg-title-color: var(--loader-bg-color);
+    --card-bg-border-color: white;
+    /* --card-bg-test-title: orange; */
+    /* --card-bg-test-content: red;     */
+}
+
+/***********************************/
+/*             DEFAULT             */
+/*            TELEPHONE            */
+/***********************************/
+
+div.card{
+    color: var(--card-color);
+    
+    clip-path: var(--og-clip-path);
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+div.card__outer {
+    background-color: var(--card-bg-border-color);
+    padding: var(--card-outer-padding);
+    width: var(--width);
+    width: 100%;
+    height: 100%;
+    
+    flex-direction: column;
+}
+div.card__alf {
+    background-color: var(--card-bg-color);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+div.card__inner {
+    background-color: var(--card-bg-test-content);
+    width: calc(100% - calc(var(--card-outer-padding) * 2));
+    height: 100%;
+    margin: 0px;
+
+    padding-left: var(--tile-edges);
+    padding-right: var(--tile-edges);
+    padding-top: calc(var(--tile-edges) / 2);
+    padding-bottom: var(--tile-edges);
+
+    text-align: justify;
+    text-justify: inter-word;
+
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: baseline;
+}
+:is(h1,h2,h3,h4,h5,h6).card__title {
+    background-color: var(--card-bg-test-title);
+    width: calc(100% - calc(var(--card-outer-padding) * 2));
+    margin: 0px;
+    padding-left: var(--tile-edges);
+    padding-right: var(--tile-edges);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% var(--tile-edges), calc(100% - var(--tile-edges)) 0)
+}
+
+/* :is(h1,h2,h3,h4,h5,h6).card__title:after {
+    content: ' ';
+    width: 100%;
+    height: 6px;
+    display: block;
+    background-color: black;
+    clip-path: polygon(0 0,0 100%,10% 100%,calc(10% + 4px) 2px,100% 2px,100% 0);
+} */
+
+img.card__img {
+    width: calc(100% - calc(var(--card-outer-padding) * 2));
+    height: auto;
+    margin: 0px;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% var(--tile-edges), calc(100% - var(--tile-edges)) 0)
+}
+
+:is(.card__inner, .card__img) + .card__title {
+    clip-path: none;
+}
+
+.card__title + .card__inner,
+.card__img + .card__inner {
+    clip-path: polygon(0 0, 0 calc(100% - var(--tile-edges)), var(--tile-edges) 100%, 100% 100%, 100% 0, 100% 0);
+}
+
+.card__inner :is(button, a).card__action {
+    background-color: black;
+    color: white;
+    --tile-edges-edit: calc(var(--tile-edges) / 2);
+    padding: 0px var(--tile-edges-edit);
+    clip-path: polygon(0 0, 0 calc(100% - var(--tile-edges-edit)), var(--tile-edges-edit) 100%, 100% 100%, 100% var(--tile-edges-edit), calc(100% - var(--tile-edges-edit)) 0);;
+}
+
+/* Bizaux Left Top */
+.bizLT,
+.bizLT > .card__alf,
+.bizLT > .card__img{
+    clip-path: polygon(var(--tile-edges) 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 var(--tile-edges))!important;
+}
+.bizLT .card__alf > .card__inner {
+    clip-path: none!important;
+}
+
+/* Bizaux None */
+.bizN, 
+.bizN .card__alf > .card__inner,
+.bizN > .card__alf,
+.bizN > .card__img {
+    clip-path: polygon(0 0, 0 100%, 0 100%, 100% 100%, 100% 0, 100% 0)!important;
+}
+
+/* Bizaux Right Bottom */
+.bizRB, 
+.bizRB > .card__alf,
+.bizRB .card__alf > .card__inner {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--tile-edges)), calc(100% - var(--tile-edges)) 100%, 0 100%, 0 0)!important;
+}
+.bizRB > .card__img {
+    clip-path: none!important;
+}
+
+
+/***********************************/
+/*             TABLETTE            */
+/***********************************/
+@media screen and (min-width: 768px) {
+    
+}
+
+/***********************************/
+/*             DESKTOP             */
+/***********************************/
+@media screen and (min-width: 992px) {
+
+}
+
+/***********************************/
+/*               TV                */
+/***********************************/
+@media screen and (min-width: 1200px) {
+    
+}
