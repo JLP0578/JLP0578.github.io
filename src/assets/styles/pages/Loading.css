@@ -1,0 +1,202 @@
+/***********************************/
+/*             DEFAULT             */
+/*            TELEPHONE            */
+/***********************************/
+
+#preloader {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    padding: 5px 15px;
+
+    color: var(--loader-color);
+    background-color: var(--loader-bg-color);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#preloader .loading-container {
+    border: 1px solid var(--loader-color);
+    width: 335px;
+    padding: 5px 15px;
+}
+
+#preloader .loading-container .title {
+    background-color: var(--loader-bg-color);
+    padding: 0px;
+    margin-right: 5px;
+
+    display: block;
+}
+
+#preloader .loading-container .title::after {
+    content: "";
+    opacity: 0;
+    animation: none;
+}
+
+#preloader .loading-container .loading-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#crt {
+	pointer-events: none;
+}
+#crt::before,
+#crt::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#crt::after {
+  background: rgba(18, 16, 16, .3);
+  opacity: 0;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+#crt::before {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 4px, 6px 100%;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.26559;
+  }
+  45% {
+    opacity: 0.84693;
+  }
+  50% {
+    opacity: 0.96019;
+  }
+  55% {
+    opacity: 0.08594;
+  }
+  60% {
+    opacity: 0.20313;
+  }
+  65% {
+    opacity: 0.71988;
+  }
+  70% {
+    opacity: 0.53455;
+  }
+  75% {
+    opacity: 0.37288;
+  }
+  80% {
+    opacity: 0.71428;
+  }
+  85% {
+    opacity: 0.70419;
+  }
+  90% {
+    opacity: 0.7003;
+  }
+  95% {
+    opacity: 0.36108;
+  }
+  100% {
+    opacity: 0.24387;
+  }
+}
+
+/***********************************/
+/*              CUSTOM             */
+/***********************************/
+@media screen and (min-width: 400px) { 
+    #preloader .loading-container .title {
+        padding: 0px 10px;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #preloader .loading-container .title::after {
+        content: var(--trois-point);
+        opacity: 1;
+        min-width: 1.8em;
+        animation: 2s dots infinite;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    @keyframes dots {
+        0% {content: var(--un-point);}
+        33% {content: var(--deux-point);}
+        66% {content: var(--trois-point);}
+        100% {content: var(--un-point);}
+    }
+
+    .disabled_loader #preloader .perc::after {
+        font-size: 1rem;
+    }
+}
+
+/***********************************/
+/*             TABLETTE            */
+/***********************************/
+@media screen and (min-width: 768px) {
+    #preloader {
+        padding: 25px 45px;
+    }
+    #preloader .loading-container {
+        width: 360px;
+    }
+}
+/***********************************/
+/*             DESKTOP             */
+/***********************************/
+@media screen and (min-width: 992px) {
+
+}
+
+/***********************************/
+/*               TV                */
+/***********************************/
+@media screen and (min-width: 1200px) {
+
+}
