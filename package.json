@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
@@ -60,6 +59,7 @@
     "@storybook/react": "^7.0.6",
     "@storybook/react-webpack5": "^7.0.6",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@testing-library/jest-dom": "^5.16.5",
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
     "storybook": "^7.0.6",
