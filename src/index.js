@@ -1,15 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { GlobalProvider } from './context/GlobalState'
+
+import App from './components/pages/App'
+import reportWebVitals from './reportWebVitals'
+
+import './assets/styles/reset.css'
+import './assets/styles/editable.css'
+import './assets/styles/pages/index.css'
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <GlobalProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </GlobalProvider>
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
