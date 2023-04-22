@@ -1,0 +1,47 @@
+:root {
+
+}
+
+/***********************************/
+/*             DEFAULT             */
+/*            TELEPHONE            */
+/***********************************/
+
+span.icons.icons_high {
+    color: #21e8cb;
+}
+span.icons.icons_neural {
+    color: white;
+}
+span.icons.icons_low {
+    color: #e68de1;
+}
+span.icons::before {
+    content: '[';
+    color: white;
+}
+span.icons::after {
+    content: ']';
+    color: white;
+}
+
+/***********************************/
+/*             TABLETTE            */
+/***********************************/
+@media screen and (min-width: 768px) {
+    
+}
+
+/***********************************/
+/*             DESKTOP             */
+/***********************************/
+@media screen and (min-width: 992px) {
+
+}
+
+/***********************************/
+/*               TV                */
+/***********************************/
+@media screen and (min-width: 1240px) {
+    
+}
