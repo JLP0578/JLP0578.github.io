@@ -60,7 +60,7 @@ jobs:
       id-token: write
 
     environment:
-      name: github-pages
+      name: static-files
       url: ${{ steps.deployment.outputs.page_url }}
       
     runs-on: ubuntu-latest
