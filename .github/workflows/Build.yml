@@ -47,8 +47,8 @@ jobs:
         name: static-files
         path: build/
         
-#     - name: Test artifact upload
-#       run: ls -R
+    - name: Test artifact upload
+      run: ls -R
 
   deploy:
     name: Deploy
@@ -61,7 +61,7 @@ jobs:
       id-token: write
       
     steps:
-      - name: Test artifact upload
+      - name: Test artifact Download
         run: ls -R
         
 #       - name: Download artifact build files
