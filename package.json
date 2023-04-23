@@ -22,9 +22,7 @@
     "build-storybook": "storybook build"
   },
   "jest": {
-    "globals": {
-      "global": {}
-    }
+    "setupFiles": ["./setupTests.js"]
   },
   "eslintConfig": {
     "extends": [
