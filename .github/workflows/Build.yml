@@ -64,11 +64,10 @@ jobs:
       - name: Test artifact Download
         run: ls -R
         
-#       - name: Download artifact build files
-#         uses: actions/download-artifact@v1
-#         with:
-#           name: static-files
-#           path: ./
+      - name: Download artifact build files
+        uses: actions/download-artifact@v3
+        with:
+          name: static-files
 
 #       - name: Deploy to GitHub Pages
 #         id: deployment
