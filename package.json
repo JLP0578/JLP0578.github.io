@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -36,12 +36,6 @@
         }
       }
     ]
-  },
-  "jest": {
-    "moduleFileExtensions": ["js", "jsx"],
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    }
   },
   "browserslist": {
     "production": [
