@@ -47,29 +47,26 @@ jobs:
         name: static-files
         path: build/
         
-    - name: Test artifact upload
-      run: ls -R
+#     - name: Test artifact upload
+#       run: ls -R
 
-#   deploy:
-#     name: Deploy
-#     runs-on: ubuntu-latest
-#     needs: build
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build
     
-#     permissions:
-#       contents: read
-#       pages: write
-#       id-token: write
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
       
-#     steps:
-#       - name: Download artifact build files
-#         uses: actions/download-artifact@v1
-#         with:
-#           name: static-files
-# #           path: build/
-          
-#       - name: Test artifact download
-#         run: ls -R
+    steps:
+      - name: Download artifact build files
+        uses: actions/download-artifact@v1
+        with:
+          name: static-files
+          path: ./
 
-#       - name: Deploy to GitHub Pages
-#         id: deployment
-#         uses: actions/deploy-pages@v2
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
