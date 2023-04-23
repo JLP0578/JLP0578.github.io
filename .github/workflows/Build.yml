@@ -5,6 +5,12 @@ on:
     branches: [ "node-v" ]
   pull_request:
     branches: [ "node-v" ]
+    
+  workflow_dispatch:
+  
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   Build:
