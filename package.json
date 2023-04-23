@@ -21,6 +21,11 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "jest": {
+    "globals": {
+      "global": {}
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
