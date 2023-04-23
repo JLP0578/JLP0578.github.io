@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 import { GlobalProvider } from './context/GlobalState'
 
-import App from './components/pages/App'
+import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 import './assets/styles/reset.css'

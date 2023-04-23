@@ -1,15 +1,15 @@
 // https://github.com/lwcheun/React_Expense_Tracker/blob/92701e56006e6054cb877fa451d4cc42b6e74053/src/App.js
 import React from 'react';
 
-import { GlobalContext } from '../../context/GlobalState';
+import { GlobalContext } from './context/GlobalState';
 
-import Loading from './Loading';
-import Letter from '../../assets/scripts/Letter';
-import Header from '../organisms/Header';
-import Content from '../organisms/Content';
-import Footer from '../organisms/Footer';
+import Loading from './components/pages/Loading';
+import Letter from './assets/scripts/Letter';
+import Header from './components/organisms/Header';
+import Content from './components/organisms/Content';
+import Footer from './components/organisms/Footer';
 
-import '../../assets/styles/pages/App.css';
+import './assets/styles/pages/App.css';
 
 export default class App extends React.Component  {
   static contextType = GlobalContext;
