@@ -62,7 +62,7 @@ jobs:
       
     steps:
       - name: Test artifact upload
-        run: ls
+        run: ls -R
         
 #       - name: Download artifact build files
 #         uses: actions/download-artifact@v1
