@@ -37,6 +37,12 @@
       }
     ]
   },
+  "jest": {
+    "moduleFileExtensions": ["js", "jsx"],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -64,6 +70,7 @@
     "@storybook/react": "^7.0.6",
     "@storybook/react-webpack5": "^7.0.6",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "babel-jest": "^29.5.0",
     "babel-loader": "^9.1.2",
     "babel-plugin-named-exports-order": "^0.0.2",
     "css-loader": "^6.7.3",
