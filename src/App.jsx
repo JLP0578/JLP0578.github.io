@@ -1,6 +1,5 @@
 // https://github.com/lwcheun/React_Expense_Tracker/blob/92701e56006e6054cb877fa451d4cc42b6e74053/src/App.js
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { GlobalContext } from './context/GlobalState';
 
@@ -43,10 +42,4 @@ export default class App extends React.Component  {
       </>
     );
   }
-};
-
-App.propTypes = {
-};
-
-App.defaultProps = {
 };
