@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-import '../../assets/styles/atoms/Icons.css';
+require('../../assets/styles/atoms/Icons.css');
 
 export default class Icons extends React.Component {
 

@@ -1,11 +1,12 @@
 import renderer from 'react-test-renderer';
 
-import App from '../App';
+import Letter from '../../components/atoms/Letter';
 
 test('renders correctly', () => {
   const tree = renderer
-    .create(<App />)
+    .create(<Letter />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();
+
 });

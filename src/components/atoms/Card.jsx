@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-import '../../assets/styles/atoms/Card.css';
+require('../../assets/styles/atoms/Card.css');
 
 export default class Card extends React.Component {
     addOuter(){

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Header } from '../header/Header';
-import './page.css';
+require('./page.css');
 
 export const Page = () => {
   const [user, setUser] = React.useState();

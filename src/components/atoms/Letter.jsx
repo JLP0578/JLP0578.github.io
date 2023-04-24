@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+require('../../assets/styles/atoms/Letter.css');
+
 export default class Letter extends React.Component {  
 /*
         █ ▓ ▒ ░
@@ -99,7 +101,8 @@ export default class Letter extends React.Component {
   render() {
     const text = this.props.text || Letter.defaultProps.text
     const spaceChar = this.props.spaceChar || Letter.defaultProps.spaceChar
-    const betweenChar = this.props.betweenChar || Letter.defaultProps.betweenChar
+    let betweenChar = this.props.betweenChar || Letter.defaultProps.betweenChar
+    if(betweenChar.length !== 1) betweenChar = Letter.defaultProps.betweenChar
 
     return (
       <pre className="asciiText">

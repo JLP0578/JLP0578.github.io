@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <br />,
+  <ul
+    class="cluster_cards"
+  >
+    <li>
+      <div
+        className="bizLT card card__outer"
+      >
+        <div
+          className="card card__alf"
+        >
+          <img
+            alt="z"
+            className="card__img"
+            src="https://www.cssscript.com/demo/cyberpunk-2077/img/tile2.jpg"
+          />
+          <h1
+            className="card__title"
+          >
+            title
+          </h1>
+          <div
+            className="card card__inner"
+          >
+            <p>
+              content
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div
+        className="bizN card card__outer"
+      >
+        <div
+          className="card card__alf"
+        >
+          <img
+            alt="z"
+            className="card__img"
+            src="https://www.cssscript.com/demo/cyberpunk-2077/img/tile2.jpg"
+          />
+          <h1
+            className="card__title"
+          >
+            title
+          </h1>
+          <div
+            className="card card__inner"
+          >
+            <p>
+              content
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div
+        className="bizN card card__outer"
+      >
+        <div
+          className="card card__alf"
+        >
+          <img
+            alt="z"
+            className="card__img"
+            src="https://www.cssscript.com/demo/cyberpunk-2077/img/tile2.jpg"
+          />
+          <h1
+            className="card__title"
+          >
+            title
+          </h1>
+          <div
+            className="card card__inner"
+          >
+            <p>
+              content
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div
+        className="bizN card card__outer"
+      >
+        <div
+          className="card card__alf"
+        >
+          <img
+            alt="z"
+            className="card__img"
+            src="https://www.cssscript.com/demo/cyberpunk-2077/img/tile2.jpg"
+          />
+          <h1
+            className="card__title"
+          >
+            title
+          </h1>
+          <div
+            className="card card__inner"
+          >
+            <p>
+              content
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div
+        className="bizRB card card__outer"
+      >
+        <div
+          className="card card__alf"
+        >
+          <img
+            alt="z"
+            className="card__img"
+            src="https://www.cssscript.com/demo/cyberpunk-2077/img/tile2.jpg"
+          />
+          <h1
+            className="card__title"
+          >
+            title
+          </h1>
+          <div
+            className="card card__inner"
+          >
+            <p>
+              content
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>,
+]
+`;

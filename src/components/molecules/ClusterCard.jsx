@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Card from "../atoms/Card";
 
-import '../../assets/styles/molecules/ClusterCard.css';
+require('../../assets/styles/molecules/ClusterCard.css');
 
 export default class ClusterCard extends React.Component {
     

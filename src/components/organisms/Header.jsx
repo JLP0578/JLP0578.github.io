@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../../assets/styles/organismes/Header.css';
+require('../../assets/styles/organisms/Header.css');
 
 export default class Header extends React.Component {
     componentDidMount() {

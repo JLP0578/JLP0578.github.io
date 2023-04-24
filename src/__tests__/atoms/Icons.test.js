@@ -1,11 +1,12 @@
 import renderer from 'react-test-renderer';
 
-import App from '../App';
+import Icons from '../../components/atoms/Icons';
 
 test('renders correctly', () => {
   const tree = renderer
-    .create(<App />)
+    .create(<Icons />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();
+
 });

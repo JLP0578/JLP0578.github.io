@@ -16,6 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "test-dev": "jest --watchAll --updateSnapshot",
     "test": "jest",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
@@ -71,6 +72,7 @@
     "eslint-webpack-plugin": "^4.0.1",
     "html-webpack-plugin": "^5.5.1",
     "jest": "^27.5.1",
+    "jsdom": "^21.1.1",
     "prop-types": "^15.8.1",
     "react-test-renderer": "^18.2.0",
     "sass": "^1.62.0",

@@ -53,8 +53,8 @@ jobs:
         name: static-files
         path: build/
         
-    - name: Test artifact upload
-      run: ls -R
+    # - name: Test artifact upload
+    #   run: ls -R
 
   Deploy:
     name: Deploy
@@ -72,8 +72,8 @@ jobs:
     runs-on: ubuntu-latest
       
     steps:
-      - name: Test artifact Download
-        run: ls -R
+      # - name: Test artifact Download
+      #   run: ls -R
         
       - name: Checkout
         uses: actions/checkout@v3

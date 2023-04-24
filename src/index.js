@@ -6,9 +6,9 @@ import { GlobalProvider } from './context/GlobalState'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-import './assets/styles/reset.css'
-import './assets/styles/editable.css'
-import './assets/styles/pages/index.css'
+require('./assets/styles/reset.css');
+require('./assets/styles/editable.css');
+require('./assets/styles/index.css');
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

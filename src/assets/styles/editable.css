@@ -25,9 +25,4 @@
     --anim-time-rm: calc(var(--anim-time) + var(--anim-diff));
 }
 
-pre.asciiText {
-    line-height: 1.19;
-    width: max-content;
-    margin: 0px;
-}
 

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Normal card card__outer"
+>
+  <div
+    className="card card__alf"
+  >
+    <div
+      className="card card__inner"
+    />
+  </div>
+</div>
+`;

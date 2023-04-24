@@ -32,6 +32,7 @@
 
 /* TODO: Activate/Desactivate > crt */
 .disabled_loader #crt,
+.disabled_loader #scan-line,
 .disabled_loader #preloader {
   display: flex;
   opacity: 1;

@@ -2,7 +2,7 @@ import React from "react";
 
 import Icons from "../atoms/Icons";
 
-import './../../assets/styles/organismes/Content.css';
+require('../../assets/styles/organisms/Content.css');
 
 export default class Content extends React.Component {
     componentDidMount() {

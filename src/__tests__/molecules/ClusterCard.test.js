@@ -1,11 +1,12 @@
 import renderer from 'react-test-renderer';
 
-import App from '../App';
+import ClusterCard from '../../components/molecules/ClusterCard';
 
 test('renders correctly', () => {
   const tree = renderer
-    .create(<App />)
+    .create(<ClusterCard />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();
+
 });

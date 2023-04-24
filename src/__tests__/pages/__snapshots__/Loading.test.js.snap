@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <section
+    id="preloader"
+  >
+    <fieldset
+      className="loading-container"
+    >
+      <legend
+        className="title"
+        data-content="Loading resources"
+      >
+        Loading resources
+      </legend>
+      <div
+        className="loading-bar"
+      >
+        <p
+          className="perc"
+        />
+      </div>
+    </fieldset>
+  </section>,
+  <div
+    id="crt"
+  />,
+  <div
+    id="scan-line"
+  />,
+]
+`;

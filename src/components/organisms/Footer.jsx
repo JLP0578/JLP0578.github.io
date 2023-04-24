@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../../assets/styles/organismes/Footer.css';
+require('../../assets/styles/organisms/Footer.css');
 
 export default class Footer extends React.Component {
     componentDidMount() {
