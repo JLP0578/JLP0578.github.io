@@ -4,10 +4,11 @@ import React from 'react';
 import { GlobalContext } from './context/GlobalState';
 
 import Loading from './components/pages/Loading';
-import Letter from './components/atoms/Letter';
-import Header from './components/organisms/Header';
-import Content from './components/organisms/Content';
-import Footer from './components/organisms/Footer';
+// import Letter from './components/atoms/Letter';
+// import Header from './components/organisms/Header';
+// import Content from './components/organisms/Content';
+// import Footer from './components/organisms/Footer';
+import Temp from './components/organisms/Temp';
 
 
 require('./assets/styles/App.css');
@@ -33,10 +34,13 @@ export default class App extends React.Component  {
       <div className={loading? "disabled_loader" : "enabled_loader"}>
         <Loading />
         <section id="onepage">
-          <Letter text="  Devloppeur  Web.  "/>
-          <Header/>
-          <Content/>
-          <Footer/>
+          <Temp/>
+          {/* 
+            <Letter text="  Devloppeur  Web.  "/>  
+            <Header/>
+            <Content/>
+            <Footer/> 
+          */}
         </section>
       </div>
       </>
