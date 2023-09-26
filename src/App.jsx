@@ -18,6 +18,7 @@ export default class App extends React.Component  {
 
   componentDidMount() {
     console.log('DOM LOADED')
+    document.title = "Portfolio de Julie LP";
     
     setTimeout(() => {
       this.context.isLoading({
